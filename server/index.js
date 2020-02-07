@@ -48,7 +48,7 @@ app.get('/values/current', async (req, res) => {
     .hgetall('values', (error, values) => {
       res.send(values);
     })
-    .catch(error => console.log('Error: ', error));
+    // .catch(error => console.log('Error: ', error));
 });
 
 app.post('/values', async (req, res) => {
